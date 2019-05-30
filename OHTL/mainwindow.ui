@@ -1,0 +1,1151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>620</width>
+    <height>499</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>621</width>
+      <height>501</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>139</width>
+      <height>80</height>
+     </size>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::DefaultContextMenu</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:#2c2c54;</string>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <property name="styleSheet">
+      <string notr="true">color:ffffff;</string>
+     </property>
+     <attribute name="title">
+      <string>Resistance per unit length</string>
+     </attribute>
+     <widget class="QComboBox" name="material">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>271</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Copper</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Aluminum</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>271</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#2c3e50;</string>
+      </property>
+      <property name="text">
+       <string>Select the conductor's material</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="p">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>90</y>
+        <width>261</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#2f3542;</string>
+      </property>
+      <property name="text">
+       <string>Resistivity = 1.72*10^-6</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="R">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>30</y>
+        <width>281</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#dfe4ea;
+color:#227093;
+border-radius: 9px;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>10</y>
+        <width>271</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:2c3e50</string>
+      </property>
+      <property name="text">
+       <string>Enter raduis  of the conductor in cm</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox_7">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>160</y>
+        <width>271</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Solid Conductor</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Stranded Conductor</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Bundled Solid Conductor</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Bundled Stranded Conductor</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="label_15">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>130</y>
+        <width>271</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#2c3e50;</string>
+      </property>
+      <property name="text">
+       <string>Select the conductor's type</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>390</y>
+        <width>601</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#pushButton_3{ background-color: #2f3542; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+border: 2px solid  #2f3542;
+border-radius: 6px;
+webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+
+}
+#pushButton_3:hover{
+webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+background-color: white;
+  color: #2f3542; 
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}</string>
+      </property>
+      <property name="text">
+       <string>Calculate</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_16">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>70</y>
+        <width>311</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:2c3e50</string>
+      </property>
+      <property name="text">
+       <string>Enter the number of conductor's layrers</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="layers">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>90</y>
+        <width>281</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#dfe4ea;
+color:#227093;
+border-radius: 9px;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="area">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>210</y>
+        <width>291</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#40407a;</string>
+      </property>
+      <property name="text">
+       <string>Area = </string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="res">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>240</y>
+        <width>271</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#40407a;</string>
+      </property>
+      <property name="text">
+       <string>R = </string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="wires">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>270</y>
+        <width>281</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#40407a;</string>
+      </property>
+      <property name="text">
+       <string>Total number  of Wires =</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="bund">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>300</y>
+        <width>291</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#40407a;</string>
+      </property>
+      <property name="text">
+       <string>Bundle number = </string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="q">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>150</y>
+        <width>281</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#dfe4ea;
+color:#227093;
+border-radius: 9px;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_17">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>130</y>
+        <width>311</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:2c3e50</string>
+      </property>
+      <property name="text">
+       <string>Enter tnumber of bundles in bundled</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Inductance per unit length</string>
+     </attribute>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>271</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#2c3e50;</string>
+      </property>
+      <property name="text">
+       <string>Select the conductor's type</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox_9">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>271</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Solid Conductor</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Composite Conductor</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Stranded Conductor</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Bundled Solid Conductor</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Bundled Stranded Conductor</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>251</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#2c3e50;</string>
+      </property>
+      <property name="text">
+       <string>Select the conductor's phase</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox_10">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>90</y>
+        <width>271</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::NoContextMenu</enum>
+      </property>
+      <item>
+       <property name="text">
+        <string>Single Phase 2 solid wire</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Three Phase - Symmetrical Spacing</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Three Phase - Asymmetrical Transposed</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="label_32">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>70</y>
+        <width>331</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#2c3e50;</string>
+      </property>
+      <property name="text">
+       <string>Enter D1 between the conductors in cm</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_33">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>10</y>
+        <width>271</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#2c3e50;</string>
+      </property>
+      <property name="text">
+       <string>Enter raduis  of the conductor in cm</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="dis3">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>210</y>
+        <width>281</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#dfe4ea;
+color:#227093;
+border-radius: 9px;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="D2_4">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>130</y>
+        <width>291</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#2c3e50;</string>
+      </property>
+      <property name="text">
+       <string>Enter D2 between the conductors in cm</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="D3_4">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>190</y>
+        <width>271</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#2c3e50;</string>
+      </property>
+      <property name="text">
+       <string>Enter D3 of the conductor in cm</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="GMRi_4">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>250</y>
+        <width>271</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#2c3e50;</string>
+      </property>
+      <property name="text">
+       <string>Enter GMR</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="dis2">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>150</y>
+        <width>281</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#dfe4ea;
+color:#227093;
+border-radius: 9px;</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="rad">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>30</y>
+        <width>281</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#dfe4ea;
+color:#227093;
+border-radius: 9px;</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="dis1">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>90</y>
+        <width>281</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#dfe4ea;
+color:#227093;
+border-radius: 9px;</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="gmrii">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>270</y>
+        <width>281</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#dfe4ea;
+color:#227093;
+border-radius: 9px;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_7">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>390</y>
+        <width>601</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#pushButton_7{ background-color: #2f3542; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+border: 2px solid  #2f3542;
+border-radius: 6px;
+webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+
+}
+#pushButton_7:hover{
+webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+background-color: white;
+  color: #2f3542; 
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}</string>
+      </property>
+      <property name="text">
+       <string>Calculate</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="GMD">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>200</y>
+        <width>271</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#40407a;</string>
+      </property>
+      <property name="text">
+       <string>GMD = </string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="bundle_5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>130</y>
+        <width>251</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#2c3e50;</string>
+      </property>
+      <property name="text">
+       <string>Select the number of conductors</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="L">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>260</y>
+        <width>281</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#40407a;</string>
+      </property>
+      <property name="text">
+       <string>L = </string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="GMR">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>230</y>
+        <width>271</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#40407a;</string>
+      </property>
+      <property name="text">
+       <string>GMR = </string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="cb">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>150</y>
+        <width>271</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::NoContextMenu</enum>
+      </property>
+      <item>
+       <property name="text">
+        <string>2 conductor bundle</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>3 conductor bundle</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>4 conductor bundle</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="i">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>290</y>
+        <width>281</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#40407a;</string>
+      </property>
+      <property name="text">
+       <string>I = </string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="spacing">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>330</y>
+        <width>281</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#dfe4ea;
+color:#227093;
+border-radius: 9px;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="GMRi_7">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>310</y>
+        <width>271</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#2c3e50;</string>
+      </property>
+      <property name="text">
+       <string>Enter Bundle spacing</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>Capacitive per unit length</string>
+     </attribute>
+     <widget class="QComboBox" name="comboBox">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>271</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Solid Conductor</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Stranded Conductor</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Bundled Solid Conductor</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Bundled Stranded Conductor</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QComboBox" name="comboBox_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>90</y>
+        <width>271</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::NoContextMenu</enum>
+      </property>
+      <item>
+       <property name="text">
+        <string>single phase</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>symmetrically spaced 3 phase</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>A symmetrically spaced 3 phase</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>271</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Select the conductor's type</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>251</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Select the conductor's phase</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="r">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>30</y>
+        <width>281</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#dfe4ea;
+color:#227093;
+border-radius: 9px;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>10</y>
+        <width>271</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:2c3e50</string>
+      </property>
+      <property name="text">
+       <string>Enter raduis  of the conductor in cm</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="d1">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>90</y>
+        <width>281</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#dfe4ea;
+color:#227093;
+border-radius: 9px;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>70</y>
+        <width>331</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:2c3e50</string>
+      </property>
+      <property name="text">
+       <string>Enter D1 between the conductors in cm</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="d2">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>150</y>
+        <width>281</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#dfe4ea;
+color:#227093;
+border-radius: 9px;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="D2">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>130</y>
+        <width>291</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:2c3e50</string>
+      </property>
+      <property name="text">
+       <string>Enter D2 between the conductors in cm</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="d3">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>210</y>
+        <width>281</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#dfe4ea;
+color:#227093;
+border-radius: 9px;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="D3">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>190</y>
+        <width>271</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:2c3e50</string>
+      </property>
+      <property name="text">
+       <string>Enter D3 of the conductor in cm</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="gmd">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>210</y>
+        <width>271</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#40407a;</string>
+      </property>
+      <property name="text">
+       <string>GMD = </string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="gmr">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>240</y>
+        <width>271</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#40407a;</string>
+      </property>
+      <property name="text">
+       <string>GMR = </string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="c">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>270</y>
+        <width>281</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#40407a;</string>
+      </property>
+      <property name="text">
+       <string>C = </string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>390</y>
+        <width>601</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#pushButton{ background-color: #2f3542; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+border: 2px solid  #2f3542;
+border-radius: 6px;
+webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+
+}
+#pushButton:hover{
+webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+background-color: white;
+  color: #2f3542; 
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}</string>
+      </property>
+      <property name="text">
+       <string>Calculate</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="GMRi">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>250</y>
+        <width>271</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:2c3e50</string>
+      </property>
+      <property name="text">
+       <string>Enter GMR</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="gmri">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>270</y>
+        <width>281</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#dfe4ea;
+color:#227093;
+border-radius: 9px;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="bundle">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>130</y>
+        <width>251</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Select the number of conductors</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox_5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>150</y>
+        <width>271</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::NoContextMenu</enum>
+      </property>
+      <item>
+       <property name="text">
+        <string>2 conductor bundle</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>3 conductor bundle</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>4 conductor bundle</string>
+       </property>
+      </item>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
